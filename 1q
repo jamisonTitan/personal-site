@@ -10,7 +10,7 @@
       <p><input type="submit" name="donation" value="send me a donation"></input></p>
     </form>
     <form action="#" method="post" class="d-flex flex-row justify-content-center">
-      <input type="image" style="width: 48px; height: 48px; margin-top: 8px; margin-right: 16px;" src="{{ url_for('static', filename='images/github.png') }}" alt="github" />
+      <input type="image" style="width: 48px; height: 48px; margin-top: 16px; margin-right: 8px;" src="{{ url_for('static', filename='images/github.png') }}" alt="github" />
       <input type="image" style="width: 64px; height: 64px; margin-left: 16px;" src="{{ url_for('static', filename='images/linkedin.png')}}"/>
     </form>
     <p class="text-center"> jamisontitan@gmail.com </p>

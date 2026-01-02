@@ -1,11 +1,27 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for, request, redirect
 
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("/", methods=["POST", "GET"])
 def main():
-    return render_template("index.html")
+    if request.method == "POST":
+        if "projects" in request.form:
+            return redirect(url_for("projects"))
+        elif "donation" in request.form:
+            return redirect(url_for("donation"))
+    else:
+        return render_template("index.html")
+
+
+@app.route("/projects")
+def projects():
+    return render_template("projects.html")
+
+
+@app.route("/donation")
+def donation():
+    return render_template("donation.html")
 
 
 if __name__ == "__main__":
