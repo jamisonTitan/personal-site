@@ -28,3 +28,26 @@
 .socials {
   margin-top: 48px;
 }
+
+.project {
+  display: inline-block;
+  position: relative;
+  width: 30%;
+  border-radius: 8px;
+}
+
+.project:hover {
+  background: black;
+  padding-left: 16px;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-link:hover {
+  color: white;
+  transition: all 1s ease-in-out;
+}
+
+a {
+  color: inherit;
+}
