@@ -6,7 +6,9 @@ app = Flask(__name__)
 @app.route("/", methods=["POST", "GET"])
 def main():
     if request.method == "POST":
-        if "projects" in request.form:
+        if "about" in request.form:
+            return redirect(url_for("about"))
+        elif "projects" in request.form:
             return redirect(url_for("projects"))
         elif "blog" in request.form:
             return redirect(url_for("blog"))
@@ -14,6 +16,11 @@ def main():
             return redirect(url_for("donation"))
     else:
         return render_template("index.html")
+
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 
 @app.route("/projects")

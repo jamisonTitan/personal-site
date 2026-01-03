@@ -1,21 +1,15 @@
 {% extends "base.html" %}
 {% block title %} Emmett Titan Jamison {% endblock %}
 {% block content %}
-<h1 class="text-center fw-bolder">Emmett Titan Jamison</h1>
-<div class="main-pg-col d-flex flex-col justify-content-center">
-  <div class="main-pg-row d-flex flex-row justify-content-center">
-    <div class="main-pg-about-me">
-      <div class="main-pg-about-me-header"> <p>About me: </p> </div>
-      <p align="left" > I am a software engineer and programming enthusiast! I attended university of San francisco with a major in Computer Science. My work history includes frontend web development at a Silicon Valley startup with enterprise clients as well as freelance software-development and consulting work. Additionaly, I have been a diagnostic server engineer at a computer manufacturing warehouse. At this site you can check out my personal projects, look at examples of my work, or read my blog. In my blog I showcase my skills by writing about my academic, professional, and personal experiences. I also simply enjoy writing about technology. Thanks for visiting!</p>
-    </div>
-
-    <!--- About me, Projects, Blog, and Donation redirect buttons --->
-    <form action="#" method="post" class="d-flex flex-column justify-content-flex-start">
-      <p><input class="main-pg-btn bg-light bg-gradient" type="submit" name="projects" value="Projects / Examples of my work"></input</p>
-      <p><input class="main-pg-btn bg-light bg-gradient" type="submit" name="blog" value="Blog"></input</p>
-      <p><input class="main-pg-btn bg-light bg-gradient fs-1" type="submit" name="donation" value="send me a donation"></input></p>
-    </form>
-  </div> <!--- end main page row --->
+<h1 class="pg-header playfair-display-header text-center fw-bolder">Emmett Titan Jamison</h1>
+<div class="main-pg-col d-flex flex-col justify-content-around">
+  <!--- About me, Projects, Blog, and Donation redirect buttons --->
+  <form action="#" method="post" class="d-flex flex-column justify-content-around text-center">
+    <p><input class="main-pg-btn bg-light bg-gradient" type="submit" name="about" value="About Me"></input</p>
+    <p><input class="main-pg-btn bg-light bg-gradient" type="submit" name="projects" value="Projects / Examples of my work"></input</p>
+    <p><input class="main-pg-btn bg-light bg-gradient" type="submit" name="blog" value="Blog"></input</p>
+    <p><input class="main-pg-btn bg-light bg-gradient fs-1" type="submit" name="donation" value="send me a donation"></input></p>
+  </form>
 </div> <!--- end main page col --->
 <!--- github, linkedIn, and email links --->
 <div class="socials d-flex flex-row justify-content-center">
