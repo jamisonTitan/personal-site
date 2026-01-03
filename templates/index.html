@@ -1,20 +1,23 @@
 {% extends "base.html" %}
 {% block title %} Emmett Titan Jamison {% endblock %}
 {% block content %}
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center" style="margin-top: 50px;">
   <div class="d-flex flex-column">
-    <h1>Emmett Titan Jamison</h1>
-    <p class="text-center"> this is the description</p>
-    <form action="#" method="post" class="d-flex flex-row justify-content-center">
-      <p><input type="submit" name="projects" value="Projects/ Examples of my work"></input></p>
-      <p><input type="submit" name="donation" value="send me a donation"></input></p>
+    <h1 class="text-center fw-bolder">Emmett Titan Jamison</h1>
+    <p align="justify" class="main-pg-p"> I am a software engineer and programming enthusiast! I attended university of San francisco with a major in Computer Science. My work history includes frontend web development at a Silicon Valley startup with enterprise clients as well as freelance web-development and consulting work. Ialso have been a diagnostic server engineer at a computer manufacturing warehouse. At this site you can check out my personal projects, look at examples of my work, or read my blog where I write about my academic, professional, and personal technology experiences and opinions. Thanks for visiting!  </p>
+    <form action="#" method="post" class="d-flex flex-row justify-content-around">
+      <p><input style="margin-right: 32px;" class="main-pg-btn bg-light bg-gradient" type="submit" name="project" value="Projects / Examples of my work"></input</p>
+      <p><input style="margin-left: 32px;" class="main-pg-btn bg-light bg-gradient fs-1" type="submit" name="donation" value="send me a donation"></input></p>
     </form>
-    <form action="#" method="post" class="d-flex flex-row justify-content-center">
-      <input type="image" style="width: 48px; height: 48px; margin-top: 8px; margin-right: 16px;" src="{{ url_for('static', filename='images/github.png') }}" alt="github" />
-      <input type="image" style="width: 64px; height: 64px; margin-left: 16px;" src="{{ url_for('static', filename='images/linkedin.png')}}"/>
-    </form>
-    <p class="text-center"> jamisontitan@gmail.com </p>
+    <div class="d-flex flex-row justify-content-center">
+      <a href="https://github.com/jamisonTitan">
+        <input type="image" style="width: 48px; height: 48px; margin-top: 8px; margin-right: 16px;" src="{{ url_for('static', filename='images/github.png') }}" alt="github" />
+      </a>
+      <a href="https://www.linkedin.com/in/emmett-titan-jamison-50b979183/">
+        <input type="image" style="width: 64px; height: 64px; margin-left: 16px;" src="{{ url_for('static', filename='images/linkedin.png')}}" />
+      </a>
+    </div>
+    <p class="text-center"><a href="mailto:jamisontitan@gmail.com"> jamisontitan@gmail.com </a></p>
   </div>
-</div>
 
-{% endblock %}
+  {% endblock %}
