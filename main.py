@@ -6,6 +6,7 @@ app = Flask(__name__)
 @app.route("/", methods=["POST", "GET"])
 def main():
     if request.method == "POST":
+        print(request.form)
         if "about" in request.form:
             return redirect(url_for("about"))
         elif "projects" in request.form:

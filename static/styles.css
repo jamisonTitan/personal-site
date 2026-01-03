@@ -19,12 +19,26 @@
   font-style: normal;
 }
 
-.content-container {
-  background: var(--ivory) !important;
+.info-btn-container {
+  display: flex;
 }
 
-.pg-header {
-  margin-top: 64px;
+.info-btn {
+  margin-top: 8px;
+  background-color: transparent;
+  border: 0 transparent;
+  margin-left: auto;
+  margin-right: 48px;
+  margin-top: 24px;
+}
+
+.info-btn-img {
+  width: 32px;
+  height: 32px;
+}
+
+.content-container {
+  background: var(--ivory) !important;
 }
 
 .main-pg-btn {
