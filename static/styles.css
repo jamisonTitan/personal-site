@@ -12,8 +12,12 @@
   transition: all 0.5s ease-in-out;
 }
 
+.main-pg-row {
+  width: 34%;
+
+}
+
 .main-pg-about-me {
-  margin: 50px;
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -50,4 +54,20 @@
 
 a {
   color: inherit;
+}
+
+.ivory-bkg {
+  background: #E4E4De;
+}
+
+.sage-bkg {
+  background: #C4C5BA;
+}
+
+.eerie-blk-bkg {
+  background: #1B1B1B;
+}
+
+.moss-bkg {
+  background: #595f39;
 }
