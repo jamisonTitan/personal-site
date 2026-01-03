@@ -8,6 +8,8 @@ def main():
     if request.method == "POST":
         if "projects" in request.form:
             return redirect(url_for("projects"))
+        elif "blog" in request.form:
+            return redirect(url_for("blog"))
         elif "donation" in request.form:
             return redirect(url_for("donation"))
     else:
@@ -17,6 +19,11 @@ def main():
 @app.route("/projects")
 def projects():
     return render_template("projects.html")
+
+
+@app.route("/blog")
+def blog():
+    return render_template("blog.html")
 
 
 @app.route("/donation")
