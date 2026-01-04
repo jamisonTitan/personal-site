@@ -6,15 +6,18 @@ app = Flask(__name__)
 @app.route("/", methods=["POST", "GET"])
 def main():
     if request.method == "POST":
-        print(request.form)
-        if "about" in request.form:
-            return redirect(url_for("about"))
-        elif "projects" in request.form:
-            return redirect(url_for("projects"))
-        elif "blog" in request.form:
-            return redirect(url_for("blog"))
-        elif "donation" in request.form:
-            return redirect(url_for("donation"))
+        #determine what button was pressed from the main page
+        #by querying the request object sent from the POST req
+        #and render the appropriate html from static/templates
+        match list(request.form.to_dict().keys())[0]:
+            case "about":
+                return redirect(url_for("about"))
+            case "projects":
+                return redirect(url_for("projects"))
+            case "blog":
+                return redirect(url_for("blog"))
+            case "donation":
+                return redirect(url_for("donation"))
     else:
         return render_template("index.html")
 
