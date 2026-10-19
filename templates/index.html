@@ -5,21 +5,24 @@
 <div class="main-pg-col d-flex flex-col justify-content-around">
   <!--- About me, Projects, Blog, and Donation redirect buttons --->
   <form action="#" method="post" class="d-flex flex-column justify-content-around text-center">
-    <p><input class="main-pg-btn"  type="submit" name="about" value="About Me"></input</p>
-    <p><input class="main-pg-btn" type="submit" name="projects" value="Projects / Examples of my work"></input</p>
-    <p><input class="main-pg-btn" type="submit" name="blog" value="Blog"></input</p>
-    <p><input class="main-pg-btn" type="submit" name="donation" value="Buy me a coffee"></input></p>
+    <p><input class="main-pg-btn" type="submit" name="about" value="About This Site"></input< /p>
+    <p><input class="main-pg-btn" type="submit" name="projects" value="Programming Projects">
+      </input< /p>
+    <p><input class="main-pg-btn" type="submit" name="blog" value="Writing and Zines!"></input< /p>
+    <p><input class="main-pg-btn" type="submit" name="donation" value="Buy me a Coffee"></input></p>
   </form>
 </div> <!--- end main page col --->
 <!--- github, linkedIn, and email links --->
 <div class="socials d-flex flex-row justify-content-center">
   <a href="https://github.com/jamisonTitan">
-    <input type="image" style="width: 48px; height: 48px; margin-top: 8px; margin-right: 16px;" src="{{ url_for('static', filename='images/github.png') }}" alt="github" />
+    <input type="image" style="width: 48px; height: 48px; margin-top: 8px; margin-right: 16px;"
+      src="{{ url_for('static', filename='images/github.png') }}" alt="github" />
   </a>
   <a href="https://www.linkedin.com/in/emmett-titan-jamison-50b979183/">
-    <input type="image" style="width: 64px; height: 64px; margin-left: 16px;" src="{{ url_for('static', filename='images/linkedin.png')}}" />
+    <input type="image" style="width: 64px; height: 64px; margin-left: 16px;"
+      src="{{ url_for('static', filename='images/linkedin.png')}}" />
   </a>
 </div>
-<p class="text-center"><a href="mailto:jamisontitan@gmail.com"> jamisontitan@gmail.com </a></p>
+<p><a href="mailto:jamisontitan@gmail.com"> jamisontitan@gmail.com </a></p>
 
 {% endblock %}

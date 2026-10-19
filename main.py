@@ -6,9 +6,9 @@ app = Flask(__name__)
 @app.route("/", methods=["POST", "GET"])
 def main():
     if request.method == "POST":
-        #determine what button was pressed from the main page
-        #by querying the request object sent from the POST req
-        #and render the appropriate html from static/templates
+        # determine what button was pressed from the main page
+        # by querying the request object sent from the POST req
+        # and render the appropriate html from static/templates
         match list(request.form.to_dict().keys())[0]:
             case "about":
                 return redirect(url_for("about"))

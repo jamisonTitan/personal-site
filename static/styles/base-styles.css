@@ -21,4 +21,11 @@
 
 .content-container {
   background: var(--ivory) !important;
+  margin: auto;
+  text-align: center;
+}
+
+.main-container {
+  margin: auto;
+  text-align: center;
 }
