@@ -4,13 +4,21 @@
 
 
 <h1 style="margin-top: 48px;" class="text-center">About this Site</h1>
-<p align="left"> I am a software engineer and programming enthusiast! I attended university of San francisco with a
-  major in Computer Science. My work history includes frontend web development at a Silicon Valley startup with
-  enterprise clients as well as freelance software-development and consulting work. Additionaly, I have been a
-  diagnostic server engineer at a computer manufacturing warehouse. At this site you can check out my personal
-  projects, look at examples of my work, or read my blog. In my blog I showcase my skills by writing about my
-  academic, professional, and personal experiences. I also simply enjoy writing about technology. Thanks for visiting!
+<p class="abt playfair-display-header-2">
+  This site is a landing page for all of my creative and professional projects. This site was written in Python using
+  Flask and is hosted on Railway.
+  If you click around the main page you can read my writings, listen to my music, and look
+  at my programming projects. I like to write short stories and opinion pieces, but I also like to write about
+  technology in general. My linkedin, github, and bandcamp
+  are linked at the bottom. All of my music is written, recorded, and played by me. I do freelance programming,
+  consulting, music performance, and music mixing and mastering work.
+  If you would like to hire me to do any of these types of work please email me at the address provided at the bottom of
+  the main page or If you simply enjoy my work and want to support me please consider making a small donation.
 </p>
+<a href="{{ url_for('main')}}">
+  <p><input class="main-pg-btn" type="submit" name="projects" value="Back to main page">
+    </input< /p>
+</a>
 
 
 {% endblock %}
