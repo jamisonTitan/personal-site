@@ -48,12 +48,10 @@
 }
 
 .socials {
+  margin-left: 16px;
   margin-top: 48px;
 }
 
-.linked-in {
-  margin-top: 20px;
-}
 
 .project {
   display: inline-block;

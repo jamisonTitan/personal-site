@@ -15,13 +15,19 @@
 <!--- github, linkedIn, and email links --->
 <div class="socials d-flex flex-row justify-content-center">
   <a href="https://github.com/jamisonTitan">
-    <input type="image" style="width: 48px; height: 48px; margin-top: 8px; margin-right: 16px;"
+    <input type="image" class="socials" style="width: 48px; height: 48px;"
       src="{{ url_for('static', filename='images/github.png') }}" alt="github" />
   </a>
-  <a class="linked-in" href="https://www.linkedin.com/in/emmett-titan-jamison-50b979183/">
-    <input type="image" style="width: 64px; height: 64px; margin-left: 16px;"
+  <a class="socials linked-in" href="https://www.linkedin.com/in/emmett-titan-jamison-50b979183/">
+    <input type="image" style="width: 52px; height: 52px;"
       src="{{ url_for('static', filename='images/linkedin.png')}}" />
   </a>
+  <a class="socials bandcamp" href="https://sadcat.bandcamp.com/">
+    <input type="image" style="width: 48px; height: 48px;"
+      src="{{ url_for('static', filename='images/bandcamp.png')}}" />
+  </a>
+
+
 </div>
 <p><a href="mailto:jamisontitan@gmail.com"> jamisontitan@gmail.com </a></p>
 
